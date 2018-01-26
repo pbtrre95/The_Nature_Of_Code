@@ -1,6 +1,11 @@
 # What is a class
 
-A class is simply a template for creating objects. 
+A class is simply a template for creating instances of objects.
+
+# What is an object 
+An object is an entity that has data and functionality.
+Eg. Class is a cookie cutter, objects are the cookies.
+
 
 ```js
 function Car { //class name
@@ -69,7 +74,7 @@ function Walker() { //Walker class that makes walker objects
     }
 ```
 
-The step function creates a random number between 0 and 4 and then floors its. Based on that outcome a choice is made using if then else statement which will change the x or y coordinate. On the next draw the render function will update their position.
+The step function creates a random number between 0 and 4 and then floors it. Based on that outcome a choice is made using if then else statement which will change the x or y coordinate. On the next draw the render function will update their position.
     
 ```js
     this.step = function() {

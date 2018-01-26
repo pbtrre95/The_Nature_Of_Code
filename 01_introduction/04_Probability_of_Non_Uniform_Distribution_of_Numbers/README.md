@@ -13,7 +13,7 @@ An ace followed by an ace = 4/52 * 3/51 = 0.0045
 
 ## Implementing probability with the random() 
 
-This is one way of generating random probability
+Here we use the random() function to generate a number between 1-5, however the results are manipulated to produce a non uniform distribution of numbers. 1 and 2 will return 1(40%), 3 will return 2(20%) and 4 and 5 will return 3(40%).
 
 ```js
 function Walker() { 
@@ -25,7 +25,7 @@ function Walker() {
 		point(this.x, this.y);
 	};
 
-	this.step = function() { //in this instance r(our random number) has 40% of being a 1 or a 3 and 20% chance of //being a 2
+	this.step = function() { //in this instance r(our random number) has 40% of being a 1 or a 3 and 20% chance of //being a 2 and 40% of being a  4 or a 5
 		var probArray = [];
 		probArray[1] = 1;
 		probArray[2] = 1;
@@ -42,8 +42,6 @@ function Walker() {
 }
 ```
 
-This is another way of generating random probability
-
 ```js
 function Walker() { //this is one way of generating random probability
 	this.x = width/2;
@@ -54,16 +52,15 @@ function Walker() { //this is one way of generating random probability
 		point(this.x, this.y);
 	};
 
-	this.step = function() { //in this instance r(our random number) has 40% of being a 1 or a 3 and 20% chance of //being a 2
-		var choice = floor(random(4));
+	this.step = function() {
 		var r = random(1);
-		if (r < 0.4) {
+		if (r < 0.4) { //40% of happening
 			this.x++;
-		} else if (r < 0.6) {
+		} else if (r < 0.6) { //20% of happening
 			this.x--;
-		} else if (r < 0.8) {
+		} else if (r < 0.8) { //20% of happening
 			this.y++;
-		} else {
+		} else { // 20%
 			this.y--;
 		}
 		this.x = constrain(this.x, 0, width -1);

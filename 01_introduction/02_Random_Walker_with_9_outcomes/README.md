@@ -3,7 +3,11 @@
 
 This time the walker will have 9 unique potential outcomes. 
 
-The only thing that changes is that for each step the walker takes we add a factor where the walker can go north, northeast,east,southeast,south,southwest,west,northwest -giving 9 potential outcomes. This is also randomly generated. The code largely stays the same except for this step: 
+The only thing that changes is that for each step the walker takes we add a factor where the walker can go north, northeast,east,southeast,south,southwest,west,northwest or staying put -giving 9 potential outcomes. Each outcome will have the equal chance of happening or equal probability. 9 outcomes each with an 11.1111% chance of happening.
+
+The walker can go in the X direction and Y direction at the same time, rather than one at a time (4 outcomes) like in the previous sketch. This function also occurs without the use of several if statements.
+
+Also to note is that the random function is not truly random. They are "pseudo-random" meaning that over time a pattern occurs where numbers not picked would be picked and results would even out.
 
 ```js
 function Walker() {

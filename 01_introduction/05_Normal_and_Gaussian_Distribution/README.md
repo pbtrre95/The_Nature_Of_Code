@@ -1,8 +1,12 @@
-# Normal/Gaussian Distributionn
+# Normal/Gaussian Distribution
 
-## The height of monkeys?
+A distribution of values that cluster around an average (referred to as the "mean") is known as a normal dsitribution. Gaussian functions are used to represent the probability density function of a normal distribution.
 
-A low standard deviation will mean that the majority of values cluster closely around the mean, giviing a narrow spike on the graph. A high standard deviation means the values are more evenly spread out from the average.
+## The height of the population
+
+To depict the heights of real world beings, it would not be corrected to have people's heights uniformly distributed, there are a great deal more people of a similar height than there are of extreme heights. To simulate nature, you would need a more normal distribution. Random() would be ineffective. 
+
+A low standard deviation will mean that the majority of values cluster closely around the mean, giving a narrow spike on the graph. A high standard deviation means the values are more evenly spread out from the average.
 
 Given a population, 68% of the members of that population will have values in the range of one standard deviation from the mean. 98% within two standard deviations and 99.7% within three.
 
