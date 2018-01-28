@@ -21,7 +21,7 @@ function draw() { //get a gaussian random number w/ mean of 0
 	var xloc = randomGaussian();
 	var yloc = randomGaussian();
 
-	var xsd = 100; //define a standard deviation
+	var xsd = 100; //define a standard deviation -> wider rather than taller
 	var ysd = 40;
 
 	var xMean = width/2; //define a mean value(middle of screen along he xaxis)
