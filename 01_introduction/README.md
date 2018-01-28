@@ -10,4 +10,4 @@ This section of our repository covers areas including randomness, probablilty an
 5. [Normal and Gaussian Distribution](05_Normal_and_Gaussian_Distribution)
 6. [Perlin Noise](06_Perlin_Noise)
 7. [Advanced Perlin Noise](07_Perlin_Noise_Advanced)
-8. [The Pixel Array](08_Pixel_Array)
+8. [Two Dimensional Perlin Noise](08_Two_Dimensional_Perlin_Noise)

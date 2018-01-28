@@ -30,7 +30,7 @@ function draw() {
 }
 ```
 
-Random represents time, and a random number is chosen between 0 and 1000, representing time
+Random number is chosen between 0 and 1000, representing time. Ellipse starts in middle of canvas.
 
 ```
 function Walker() {
@@ -44,7 +44,7 @@ function Walker() {
 		ellipse(this.x, 500, 40, 40);
 	}
 ```
-Random number between 0 and 1000 passed to noise function to give smooth results. Small increments give smooth transitions. 
+Map knows 0-1 is current range, changing range to 0-width. Random number between 0 and 1000 passed to noise function to give smooth results. Small increments give smooth transitions. 
 
 ```
 	this.step = function() {
