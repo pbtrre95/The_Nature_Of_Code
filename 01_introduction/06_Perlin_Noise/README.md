@@ -19,6 +19,8 @@ var x = map(noiseT, 0, 1, 0, width);
 In this case, the noise has a range between 0 and 1, but we'd like to draw a circle with a range between 0 and the window's width. 
 
 Eg.
+
+Here the background is redrawn every frame with a reduced opacity so the trail of the balls being draw can be seen
 ```
 function draw() {
 	fill(0, 15); //draws black rectangle with 15% opacity every frame, creating trail effect
@@ -26,7 +28,11 @@ function draw() {
 	walker.step();
 	walker.render();
 }
+```
 
+Random represents time, and a random number is chosen between 0 and 1000, representing time
+
+```
 function Walker() {
 	this.x = width/2; //starts in middle of canvas
 	this.xOff = random(1000); //random number between 0 and 1000, represents time
@@ -37,7 +43,10 @@ function Walker() {
 		fill(255, 45, 0, 50);
 		ellipse(this.x, 500, 40, 40);
 	}
+```
+Random number between 0 and 1000 passed to noise function to give smooth results. Small increments give smooth transitions. 
 
+```
 	this.step = function() {
 		//using randomly generated number between 0 and 1000, chooses new location on x axis
 		//does this by getting Noise value of a new x location
