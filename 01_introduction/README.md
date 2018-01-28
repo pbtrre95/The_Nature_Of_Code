@@ -8,3 +8,6 @@ This section of our repository covers areas including randomness, probablilty an
 3. [Proof of Uniform Distribution](03_Proof_of_Uniform_Distribution)
 4. [Probability of Non Uniform Distribution](04_Probability_of_Non_Uniform_Distribution_of_Numbers)
 5. [Normal and Gaussian Distribution](05_Normal_and_Gaussian_Distribution)
+6. [Perlin Noise](06_Perlin_Noise)
+7. [Advanced Perlin Noise](07_Perlin_Noise_Advanced)
+8. [The Pixel Array](08_Pixel_Array)

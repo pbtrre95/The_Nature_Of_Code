@@ -25,8 +25,11 @@ function Walker() {
 	}
 
 	this.step = function() {
-		this.x = map(noise(this.xOff), 0, 1, 0, width); //noise value for current moment in time (xOff)
+		//using randomly generated number between 0 and 1000, chooses new location on x axis
+		//does this by getting Noise value of a new x location
+		//noise ensures the pattern is nice and smooth
+		this.x = map(noise(this.xOff), 0, 1, 0, width);
 		//maps it to between 0 and the width
-		this.xOff += 0.005; //increment time xOff
+		this.xOff += 0.005; //increment time xOff, the smaller the increment, the less noticeable jump in values
 	}
 }
