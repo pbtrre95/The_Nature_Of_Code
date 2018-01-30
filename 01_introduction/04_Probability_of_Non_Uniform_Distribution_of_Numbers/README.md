@@ -41,6 +41,12 @@ function Walker() {
 	};
 }
 ```
+Here is another method of manipulating the results produced by the random() function. A number between 0 and 1 is generated. If that number is:
+
+•Between 0 and 0.4 a step to the right is taken (40% chance of happening)
+•Between 0.4 and 0.6 a step to the left is taken (20% chance of happening)
+•Between 0.6 and 0.8 a step to the top is taken (20% chance of happening)
+•Above 0.8 a step below is taken (20% chance of happening)
 
 ```js
 function Walker() { //this is one way of generating random probability
