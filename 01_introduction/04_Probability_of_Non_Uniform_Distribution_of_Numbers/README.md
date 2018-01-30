@@ -1,4 +1,4 @@
-# Probability & Non Unifrom Distributions
+# Probability & Non Uniform Distributions
 
 ## Probability Basic Principles
 
