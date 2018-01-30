@@ -47,7 +47,7 @@ function draw() {
 ``` 
 ## Using Noise to Create Cloud Effects
 
-Colouring pixels in a random grayscale color, but using the Noise function to keep a more natural flow of whites to greys to blacks. As the frame redraws, each group of pixels choose grayscale colors with respect to the ones nearby. This keeps groups of pixels similar in color. The small incrementations keep the transition in colors smooth.
+Colouring pixels in a random grayscale color, but using the Noise function to keep a more natural flow of whites to greys to blacks. As the frame redraws, each group of pixels choose grayscale colors with respect to the ones nearby. This keeps groups of pixels similar in color. The small incrementations keep the transition in colors smooth. 
 
 ``` js
 var yOff = 1000;
@@ -58,7 +58,11 @@ function setup() {
 	pixelDensity(1); //manages retina display
 	noiseDetail(10);
 }
+```
 
+The difference here with the two-dimensional Perlin Noise is that the noise() function takes two arguments(xOff, yOff) instead of one. This ensures that the colors are generated in the smooth manner in both the x direction and the y direction.
+
+``` js
 function draw() {
 	loadPixels();
 
