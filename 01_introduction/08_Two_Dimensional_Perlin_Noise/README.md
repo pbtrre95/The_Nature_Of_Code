@@ -44,12 +44,12 @@ function draw() {
 	updatePixels();
 }
 
-``` js
+``` 
 ## Using Noise to Create Cloud Effects
 
 Colouring pixels in a random grayscale color, but using the Noise function to keep a more natural flow of whites to greys to blacks. As the frame redraws, each group of pixels choose grayscale colors with respect to the ones nearby. This keeps groups of pixels similar in color. The small incrementations keep the transition in colors smooth.
 
-```
+``` js
 var yOff = 1000;
 
 function setup() {
