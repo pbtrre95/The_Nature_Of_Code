@@ -25,7 +25,9 @@ function Walker() {
 		point(this.x, this.y);
 	};
 
-	this.step = function() { //in this instance r(our random number) has 40% of being a 1 or a 3 and 20% chance of //being a 2 and 40% of being a  4 or a 5
+	this.step = function() { 
+	//in this instance r(our random number) has 40% of being a 1 or a 3 and 20% chance of 
+	//being a 2 and 40% of being a  4 or a 5
 		var probArray = [];
 		probArray[1] = 1;
 		probArray[2] = 1;
