@@ -13,7 +13,7 @@ An ace followed by an ace = 4/52 * 3/51 = 0.0045
 
 ## Implementing probability with the random() 
 
-Here we use the random() function to generate a number between 1-5, however the results are manipulated to produce a non uniform distribution of numbers. 1 and 2 will return 1(40%), 3 will return 2(20%) and 4 and 5 will return 3(40%).
+Here we use the random() function to generate a number between 1-5, however the results are manipulated to produce a non uniform distribution of numbers. 1 and 2 will return 1(40% chance), 3 will return 2(20% chance) and 4 and 5 will return 3(40% chance).
 
 ```js
 function Walker() { 
