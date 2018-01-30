@@ -15,13 +15,13 @@ This is why noise was originally invented. You tweak the parameters a bit or pla
 
 The first four values of the pixel array count for RGBA values for the first pixel, the next four account for the RGBA values for the next pixel and so on. To find a specific index of one of the values we use the following formula :
 
-```
+``` js
 (x + y * width) * 4;
 ```
 
 By using this formula, we can plot the colors of each pixel on an entire canvas with simple code, in the following canvas, each pixel will be colored red. 
 
-```
+``` js
 
 function setup() {
 	createCanvas(400, 400);
@@ -44,7 +44,7 @@ function draw() {
 	updatePixels();
 }
 
-```
+``` js
 ## Using Noise to Create Cloud Effects
 
 Colouring pixels in a random grayscale color, but using the Noise function to keep a more natural flow of whites to greys to blacks. As the frame redraws, each group of pixels choose grayscale colors with respect to the ones nearby. This keeps groups of pixels similar in color. The small incrementations keep the transition in colors smooth.
