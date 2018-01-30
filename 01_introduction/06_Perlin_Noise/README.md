@@ -1,16 +1,12 @@
 # Perlin Noise
 
-Perlin Noise is an algorithm that is used to generate various effects with natural qualities in computer generated effects.
+Good random number generators have no relationship to one another and show no patterns. Perlin Noise is different in that randomness is not the single guiding principle for generating natural numbers.
 
-Noise function produces a more naturally ordered ("smooth") sequence of events rather than a randomly generated distribution of numbers. With noise() the output range is fixed - a value is returned between 0 and 1. 
+Perlin Noise is used to generate various effects with natural qualities in computer generated effects. Noise function produces a more naturally ordered ("smooth") sequence of events rather than a randomly generated distribution of numbers. 
 
-It is used with mapping or map() function. This is to get around the fixed values of between 0 and 1. Mapping function takes 5 arguments. 
+Processing has a built-in implementation of the Perlin noise algorithm: the function noise(). The noise() function takes one, two, or three arguments, as noise is computed in one, two, or three dimensions.
 
-1. The value we want to map
-2. Current Range - minimum
-3. Current Range - maxium
-4. Desired Range - minimum
-5. Desired Range - maximum
+With noise() the output range is fixed - a value is returned between 0 and 1. The noise function is passed a moment in time and returns a corresponding value between 0 and 1.
 
 Eg.
 ``` js
@@ -28,7 +24,7 @@ function draw() {
 	walker.step();
 	walker.render();
 }
-``` js
+```
 
 Random number is chosen between 0 and 1000, representing time. Ellipse starts in middle of canvas.
 
@@ -44,6 +40,14 @@ function Walker() {
 		ellipse(this.x, 500, 40, 40);
 	}
 ```
+The noise() function is used with mapping or map() function. This is to get around the fixed values of a number between 0 and 1. Mapping function takes 5 arguments. 
+
+1. The value we want to map, a time
+2. Current Range - minimum
+3. Current Range - maxium
+4. Desired Range - minimum
+5. Desired Range - maximum
+
 Map knows 0-1 is current range, changing range to 0-width. Random number between 0 and 1000 passed to noise function to give smooth results. Small increments give smooth transitions. 
 
 ``` js
