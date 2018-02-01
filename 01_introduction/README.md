@@ -1,4 +1,4 @@
-# The Nature of Code - P5
+# The Nature of Code - P5 Introduction
 
 This section of our repository covers areas including randomness, probablilty and Perlin Noise
 
