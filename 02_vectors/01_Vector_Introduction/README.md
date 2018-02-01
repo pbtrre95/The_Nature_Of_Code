@@ -22,3 +22,17 @@ So instead of the previous code, we could have:
 Vector location;
 Vector speed;
 ```
+
+Vectors are primarily used to simplify code. They provide some pre written functions for common mathematical operations.
+They are thought of as the difference between two locations or points on a graph.
+
+Potential Locations:
+
+(-15, 3) -> walk fifteen steps west; turn and walk three steps north.
+
+For every frame of animation, you instruct each object that will move on screen to adjust its pixels by a certain number horizontally and vertically. 
+
+## For Every Frame
+### new location = velocity applied to current location
+
+Vectors are typically written either in boldface type or with an arrow on top.

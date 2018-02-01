@@ -2,17 +2,17 @@ var position;
 var velocity;
 
 function setup () {
-	createCanvas(640, 360);
-	position = createVector(100, 100);
-	velocity = createVector(2, 2);
+  createCanvas(640, 360);
+  position = createVector(100, 100);
+  velocity = createVector(2, 2);
 }
 
 function draw() {
   background(51);
- 	
-  // Add the current speed to the position
-  position.x = position.x + velocity.x;
-  position.y = position.y + velocity.y;
+  
+  // This is the only line of code that has differed from the previous code
+  // This is one of the built in functions that can be used with vectors
+  position.add(velocity);
  
   // If the ball hits the walls, it turns around
   if ((position.x > width) || (position.x < 0)) {
