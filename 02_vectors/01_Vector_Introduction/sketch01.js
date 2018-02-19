@@ -7,24 +7,6 @@ function setup () {
 	velocity = createVector(2, 2);
 }
 
-function draw() {
-  background(51);
- 	
-  // Add the current speed to the position
-  position.x = position.x + velocity.x;
-  position.y = position.y + velocity.y;
- 
-  // If the ball hits the walls, it turns around
-  if ((position.x > width) || (position.x < 0)) {
-    velocity.x = velocity.x * -1;
-  }
-  if ((position.y > height) || (position.y < 0)) {
-    velocity.y = velocity.y * -1;
-  }
- 
-  // Display the circle at x  and y position
-  stroke(0);
-  strokeWeight(2);
-  fill(127);
-  ellipse(position.x, position.y, 48, 48);
+function render () {
+  
 }
