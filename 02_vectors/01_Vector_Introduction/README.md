@@ -3,6 +3,8 @@
 Definition: An entity that has both magnitude and direction.
 Typically drawn as an arrow, the direction is indicated by where the arrow is pointing and the magnitude by the length of the arrow itself. Drawn from point A to point B, serving as an instruction on how to travel from A to B. 
 
+Scalars are different from vectors as they only describe magnitude.
+
 To demonstrate how vectors can be utilised in programming consider the following code. 
 
 ``` js
