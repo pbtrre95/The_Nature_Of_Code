@@ -5,16 +5,18 @@ var Mover = function(x, y, vx, vy, ax, ay, m) {
   this.acceleration = createVector(ax, ay);
   this.mass = m;
   
-  this.display = function() {
-    fill(255, 0, 0);
-    ellipse(this.location.x, this.location.y, this.mass, this.mass);
-  }
-
   this.update = function() {
     this.velocity.add(this.acceleration);
     this.location.add(this.velocity);
     this.velocity.limit(10);
     this.acceleration.mult(0);
+  }
+  
+  this.display = function() {
+    stroke(150);
+    strokeWeight(2);
+    fill(255, 0, 0, 50);
+    ellipse(this.location.x, this.location.y, this.mass, this.mass);
   }
 
   this.checkEdges = function() {
