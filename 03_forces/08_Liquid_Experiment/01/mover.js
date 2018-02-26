@@ -1,21 +1,20 @@
-var Mover = function(m) {
-  this.location = createVector(random(0, width), 150);
-  this.velocity = createVector(0, 5);
-  this.acceleration = createVector(0, 0);
+// position, initial velocity, initial acceleration, mass
+var Mover = function(x, y, vx, vy, ax, ay, m) {
+  this.location = createVector(x, y);
+  this.velocity = createVector(vx, vy);
+  this.acceleration = createVector(ax, ay);
   this.mass = m;
   
-  this.update = function() {
-    this.velocity.add(this.acceleration);
-    this.velocity.limit(10);
-    this.location.add(this.velocity);
-    this.acceleration.mult(0);
+  this.display = function() {
+    fill(255, 0, 0);
+    ellipse(this.location.x, this.location.y, this.mass, this.mass);
   }
 
-
-  this.display = function() {
-    ellipse(this.location.x, this.location.y, this.mass, this.mass);
-    fill(255, 255, 255);
-    strokeWeight();
+  this.update = function() {
+    this.velocity.add(this.acceleration);
+    this.location.add(this.velocity);
+    this.velocity.limit(10);
+    this.acceleration.mult(0);
   }
 
   this.checkEdges = function() {
@@ -28,7 +27,7 @@ var Mover = function(m) {
   }
 
   this.applyForce = function(force) {
-    var f = p5.Vector.div(force, this.mass)
+    var f = p5.Vector.div(force, this.mass);
     this.acceleration.add(f);
   }
 }
