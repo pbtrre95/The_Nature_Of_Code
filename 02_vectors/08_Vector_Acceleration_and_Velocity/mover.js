@@ -1,9 +1,8 @@
 
 function Mover () {
   this.position = createVector(Math.floor(random(0, width)), Math.floor(random(0, height)));
-  this.velocity = createVector(1, 1);
-  //this.acceleration = p5.Vector.random2D();
-  //this.acceleration.mult(5);
+  this.velocity = createVector(0, 0);
+  this.acceleration = p5.Vector.random2D();
 
   this.render = function () {
     ellipse(this.position.x, this.position.y, 10, 10);
@@ -12,14 +11,14 @@ function Mover () {
   }
 
   this.update = function () {
-    //this.velocity.add(this.acceleration); 
+    this.velocity.add(this.acceleration); 
     this.velocity.limit(10);  
     this.position.add(this.velocity);
     
     this.mouse = createVector(mouseX, mouseY);
     
-    //this.acceleration = p5.Vector.sub(this.mouse, this.position);
-    //this.acceleration.normalize();
+    this.acceleration = p5.Vector.sub(this.mouse, this.position);
+    this.acceleration.normalize();
   }
 
   this.checkLimits = function () {
