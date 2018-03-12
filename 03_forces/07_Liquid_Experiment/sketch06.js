@@ -16,7 +16,6 @@ function draw() {
   liquid.display();
 
   if (liquid.contains(mover)) {
-    console.log("The mover is inside the liquid john");
     var dragForce = liquid.calculateDrag(mover);
     mover.applyForce(dragForce);
   }

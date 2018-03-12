@@ -1,3 +1,8 @@
+# Changing Wind with Perlin Noise
+
+We begin with three variables, wind, angle and time. Here, we map a noise generated number up to 1000, to between 0 and 90 degrees. We create a vector using the angle created. Then extend that vectors magnitude to extend the line. The 0.001 increments will give a smoother jump between noise values.
+
+``` js
 var wind;
 var angle;
 var time = 1000;
@@ -15,3 +20,4 @@ function draw() {
   line(0, 0, wind.x, wind.y); // coordinates of 
   time += 0.001;
 }
+```

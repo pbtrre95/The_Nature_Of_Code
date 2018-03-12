@@ -8,7 +8,7 @@ For example, when driving a car, and you place your foot on the brake pedal, the
 Friction = -1 * μ * N * v;
 ````
 
-This formula can be seperated into two components, magnitude and direction. Friction points in the opposite direction to velocity. This is the part of the formula that says -1 multiplied by v or -1 times the velocity unit vector. In programming the would involve taking the velocity vector, normalizing it and multiplying it by -1.
+This formula can be seperated into two components, magnitude and direction. Friction points in the opposite direction to velocity. This is the part of the formula that says -1 multiplied by v or -1 times the velocity unit vector. In programming this would involve taking the velocity vector, normalizing it and multiplying it by -1.
 
 ``` js
 friction.normalize();
@@ -30,8 +30,8 @@ float normal = 1;
 Now we can put it all together:
 
 ``` js
-float c = 0.5;
-float normal = 1;
+float c = 0.5; //coefficient of friction
+float normal = 1; //normal force, reflected force
 float frictionMag = c * normal; //magnitude of friction
 
 friction.mult(-1);
@@ -40,3 +40,4 @@ friction.normalize();
 friction.mult(frictionMag);
 ```
 
+In this sketch, the balls will travel the screen until the friction force will slow them down into static positions.
