@@ -1,7 +1,7 @@
 # Uniform Distribution of Numbers
 
 
-This will prove that the random() produces just that
+This will prove that the random() produces just that. Over time as more and more random numbers are chosen, the history of the numbers picked will mean that the lesser picked numbers will be picked more often. This will create a more even distribution across each number.
 
 A an array of 20 zeros at the beginning. A loop runs and a random index in the array is incremented by 1. For each frame and each incrementation, the background is drawn with the values of each index indicated by a rectangle of a height of the given values. 
 

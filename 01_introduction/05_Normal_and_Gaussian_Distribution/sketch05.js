@@ -20,6 +20,8 @@ function draw() { //get a gaussian random number w/ mean of 0
 //and standard deviation of 1.0
 	var xloc = randomGaussian();
 	var yloc = randomGaussian();
+	console.log(xloc);
+	console.log(yloc);
 
 	var xsd = 100; //define a standard deviation -> wider rather than taller
 	var ysd = 40;

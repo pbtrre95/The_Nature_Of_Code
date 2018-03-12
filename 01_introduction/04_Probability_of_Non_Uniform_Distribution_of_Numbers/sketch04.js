@@ -22,7 +22,10 @@ function Walker() { //this is one way of generating random probability
 		point(this.x, this.y);
 	};
 
-	this.step = function() { //in this instance r(our random number) has 40% of being a 1 or a 3 and 20% chance of //being a 2
+	this.step = function() { 
+		// in this instance r(our random number) has 
+		// 40% of being a 1 or a 3 and 20% chance of 
+		// being a 2
 		var choice = floor(random(4));
 		var r = random(1);
 		if (r < 0.4) {

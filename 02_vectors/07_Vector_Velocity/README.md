@@ -1,5 +1,7 @@
 # Vector Velocity
 
+## Velocity vectors are directions and instructions on how a mover moves to it's next location.
+
 So in our mover class, we describe a mover which will move around the screen. It has a random position vector, a velocity vector which gives it a speed and direction to move in. For each mover, a circle is drawn filled in white with no stroke.
 
 ``` js

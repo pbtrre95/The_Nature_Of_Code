@@ -1,4 +1,4 @@
-var yOff = 1000;
+var yOff = 10000;
 
 function setup() {
 	frameRate(5);

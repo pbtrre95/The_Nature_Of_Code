@@ -32,8 +32,8 @@ function Walker() {
 	}
 
 	this.step = function() {
-		this.position.x = map(noise(this.noff.x), 0, 1, 0 -200, width + 200);
-		this.position.y = map(noise(this.noff.y), 0, 1, 0 -200, height + 200);
+		this.position.x = map(noise(this.noff.x), 0, 1, 0 - 200, width + 200);
+		this.position.y = map(noise(this.noff.y), 0, 1, 0 - 200, height + 200);
 		this.noff.add(0.005, 0.005);
 		}
 }

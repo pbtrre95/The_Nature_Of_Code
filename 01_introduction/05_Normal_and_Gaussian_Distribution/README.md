@@ -1,6 +1,6 @@
 # Normal/Gaussian Distribution
 
-A distribution of values that cluster around an average (referred to as the "mean") is known as a normal dsitribution. Gaussian functions are used to represent the probability density function of a normal distribution.
+A distribution of values that cluster around an average (referred to as the "mean") is known as a normal distribution. Gaussian functions are used to represent the probability density function of a normal distribution.
 
 ## The height of the population
 
