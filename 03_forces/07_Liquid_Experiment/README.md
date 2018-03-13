@@ -17,7 +17,7 @@ function setup () {
 
 ````
 
-A function named contains will return coordinates of the liquid where the mover will need for the force to be applied. The calculateDrag function will return a friction force - the liquids drag force.
+A function named contains will return coordinates. These coordinates will be used by the mover, when the mover is 'contained' within these coordinates the force will be applied. The calculateDrag function will return a friction force - the liquids drag force.
 
 ``` js
 this.contains = function(m) {

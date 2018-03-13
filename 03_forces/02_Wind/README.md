@@ -1,4 +1,4 @@
-# Forces - Gravity
+# Forces - Wind
 
 We draw a twenty ellipses on screen at random locations, they have a random radius size between 10 and 80. We will use their radius size as their masses. This is passed to the mover class as it creates an instance of the mover. To begin with, the mover object has no velocity or acceleration acting on it. Then in our sketch, a gravity vector is added to the acceleration each frame. We calculate gravity's effect on each mover by multiplying it's mass by 0.1. Therefore the larger movers will be quicker to fall downward.
 

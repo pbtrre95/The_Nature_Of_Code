@@ -1,4 +1,4 @@
-# Forces - Wind
+# Forces - Gravity
 
 We draw an ellipse at a location (30, 30), with no velocity or acceleration currently happening on the object. In our move class we have an applyForce function, where each frame the a force is applied to the mover's acceleration which is then added to the velocity each frame.
 

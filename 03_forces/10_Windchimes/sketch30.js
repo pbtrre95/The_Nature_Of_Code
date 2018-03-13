@@ -9,7 +9,7 @@ function setup() {
     windchimes[2] = new WindChime(50, 500, 0.5, 270, 360);
     windchimes[3] = new WindChime(500, 50, 0.5, 360, 0);
 
-    for (var j = 0; j<1000; j++) {
+    for (var j = 0; j < 1000; j++) {
     	movers[j] = new Mover(random(0, width), random(0, height), 0, 0, 0, 0, random(0, 10));
     }
 }
