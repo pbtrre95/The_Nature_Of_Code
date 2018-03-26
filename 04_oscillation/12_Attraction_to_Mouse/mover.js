@@ -6,8 +6,10 @@ var Mover = function () {
 
     this.update = function () {
         var mouse = createVector(mouseX, mouseY);
-        var dir = p5.Vector.sub(mouse, this.position); //subtract from mouse the position of the object
-        dir.normalize(); //to get unit vector
+        //subtract from mouse the position of the object
+        var dir = p5.Vector.sub(mouse, this.position);
+        //to get unit vector
+        dir.normalize(); 
         dir.mult(0.09); 
         //to extend slightly, these last two lines of code effectively slow down the object
         this.acceleration = dir;
@@ -18,7 +20,6 @@ var Mover = function () {
 
     this.display = function () {
       var angle = this.acceleration.heading();
-
         stroke(0);
         strokeWeight(2);
         fill(127);
