@@ -12,3 +12,7 @@ This section of our repository covers forces
 7. [Liquid Resistance](07_Liquid_Experiment)
 8. [Liquid Resistance Multiple Objects](08_Liquid_Experiment_Multiple_Objects)
 9. [Changing Wind Naturally(Noise)](09_Changing_Wind)
+10. [Observing the Changing Direction of Wind](10_Windchimes)
+11. [Gravitational Attraction](11_Attraction)
+12. [Multiple Objects Attracted to an Object](12_Attraction_Multiple_Objects)
+13. [Multiple Objects Attract Each Other](13_Objects_Repel_and_Attract)
