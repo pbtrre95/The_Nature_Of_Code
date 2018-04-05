@@ -6,7 +6,7 @@ var Mover = function() {
 
   this.angle = 0;
   this.aVelocity = 0;
-  this.aAcceleration = 0.001;
+  this.aAcceleration = 0.00;
 
   
   this.update = function() {
@@ -28,10 +28,10 @@ var Mover = function() {
     fill(255, 0, 0, 0);
 
     push();
-    rectMode(CENTER);
-    translate(this.location.x, this.location.y);
-    rotate(this.angle);
-    rect(0, 0, 10 * this.mass, 10 * this.mass);
+      rectMode(CENTER);
+      translate(this.location.x, this.location.y);
+      rotate(this.angle);
+      rect(0, 0, 10 * this.mass, 10 * this.mass);
     pop();
   }
 

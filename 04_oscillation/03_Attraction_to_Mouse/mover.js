@@ -10,7 +10,7 @@ var Mover = function () {
         var dir = p5.Vector.sub(mouse, this.position);
         //to get unit vector
         dir.normalize(); 
-        dir.mult(0.09); 
+        dir.mult(0.1); 
         //to extend slightly, these last two lines of code effectively slow down the object
         this.acceleration = dir;
         this.velocity.add(this.acceleration);

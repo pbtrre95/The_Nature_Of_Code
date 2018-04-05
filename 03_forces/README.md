@@ -1,4 +1,4 @@
-# The Nature of Code - P5 Vectors
+# The Nature of Code - P5 Forces
 
 This section of our repository covers forces
 
