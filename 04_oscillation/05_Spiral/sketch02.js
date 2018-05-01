@@ -1,4 +1,4 @@
-var r = 1;
+var r = 0;
 var theta = 0;
  
 function setup () {
@@ -9,12 +9,11 @@ function setup () {
 function draw () {
   var x = r * cos(theta);
   var y = r * sin(theta);
-
-  r += 0.3;
  
   noStroke();
   fill(0);
   ellipse(width/2+x, height/2+y, 16, 16);
  
-  theta += 0.1;
+  theta += 0.01;
+  r += 0.05;
 }
